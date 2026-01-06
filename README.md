@@ -2,6 +2,28 @@
 
 A collection of AI agents built using Google Agent Development Kit (ADK) and Gemini, demonstrating custom tools, nested agent patterns, and automated reasoning capabilities.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Agents](#agents)
+  - [Google Search Agent](#-google-search-agent)
+  - [Currency Conversion Agent](#-currency-conversion-agent)
+- [Prerequisites](#prerequisites)
+- [Setup Instructions](#setup-instructions)
+  - [Clone Repository](#clone-repository)
+  - [Windows (PowerShell)](#windows-powershell)
+  - [Mac/Linux](#maclinux)
+  - [Access ADK Web Interface](#access-adk-web-interface)
+- [Project Structure](#project-structure)
+  - [Key Files](#key-files)
+- [Usage](#usage)
+  - [Example Queries](#example-queries)
+- [Configuration](#configuration)
+- [ADK Web Features](#adk-web-features)
+- [Technical Highlights](#technical-highlights)
+- [Troubleshooting](#troubleshooting)
+- [Notes](#notes)
+
 ## Overview
 
 This repository showcases:
