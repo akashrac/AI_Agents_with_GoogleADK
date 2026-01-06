@@ -15,13 +15,7 @@ A collection of AI agents built using Google Agent Development Kit (ADK) and Gem
   - [Mac/Linux](#maclinux)
   - [Access ADK Web Interface](#access-adk-web-interface)
 - [Project Structure](#project-structure)
-  - [Key Files](#key-files)
-- [Usage](#usage)
-  - [Example Queries](#example-queries)
-- [Configuration](#configuration)
 - [ADK Web Features](#adk-web-features)
-- [Technical Highlights](#technical-highlights)
-- [Troubleshooting](#troubleshooting)
 - [Notes](#notes)
 
 ## Overview
