@@ -57,6 +57,37 @@ An intelligent currency converter that calculates conversion costs including tra
 4. Generates Python code for precise math
 5. Returns detailed breakdown with final amount
 
+### 🏠 Airbnb Travel Planning Agent
+An intelligent travel planning assistant that searches real-time Airbnb listings across multiple cities using Model Context Protocol (MCP) integration with Google ADK.
+
+**Features:**
+- 🤖 Gemini-powered reasoning (gemini-2.0-flash-exp)
+- 🔌 MCP server integration via @openbnb/mcp-server-airbnb
+- 🌎 Multi-city search with parallel comparison capabilities
+- 💰 Real-time pricing and availability checking
+- 🏷️ Advanced filtering (dates, guests, price range, amenities)
+- 📊 Automatic trip budget calculations and cost breakdowns
+- 🔗 Direct booking links to available properties
+- ⚡ Rate limiting and error handling for reliable searches
+- 🎯 Pet-friendly, work-friendly, and custom amenity filtering
+
+**MCP Integration:**
+This agent demonstrates Google ADK's Model Context Protocol (MCP) capabilities by connecting to an external Node.js-based Airbnb search server. The `McpToolset` enables seamless integration with npm packages, allowing the agent to:
+- Execute external tools without Python dependencies
+- Communicate with Node.js MCP servers via stdio transport
+- Access live web data through standardized protocol
+- Filter and expose specific MCP tools to the agent
+
+**Workflow:**
+1. Accepts travel dates, destinations, and guest requirements
+2. Connects to MCP server via stdio transport
+3. Searches Airbnb using `airbnb_search` tool for each city
+4. Filters properties by budget, amenities, and preferences
+5. Retrieves detailed info using `airbnb_listing_details` tool
+6. Calculates per-night and total costs for each location
+7. Compares options across cities with analysis
+8. Returns comprehensive results with direct booking links
+
 
 ## Features
 
@@ -165,6 +196,13 @@ AI_Agents_with_google/
 │ ├── agent.py # Root agent definition
 │ ├── tools.py # Custom function tools (fee lookup, exchange rates)
 │ ├── calculation_agent.py # Nested calculation agent with BuiltInCodeExecutor
+│ ├── retry.py # Retry configuration
+│ └── .env # Environment variables
+│
+├── mcp_airbnb_agent/
+│ ├── init.py
+│ ├── agent.py # Root agent with MCP integration
+│ ├── tools.py # Custom function tools
 │ ├── retry.py # Retry configuration
 │ └── .env # Environment variables
 │
