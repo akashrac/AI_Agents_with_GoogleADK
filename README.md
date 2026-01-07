@@ -16,7 +16,6 @@ A collection of AI agents built using Google Agent Development Kit (ADK) and Gem
   - [Access ADK Web Interface](#access-adk-web-interface)
 - [Project Structure](#project-structure)
 - [ADK Web Features](#adk-web-features)
-- [Notes](#notes)
 
 ## Overview
 
